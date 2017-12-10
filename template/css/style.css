@@ -1,0 +1,60 @@
+.my_carousel img{
+    margin: auto;
+}
+
+.carousel {
+
+    overflow: hidden;
+}
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+}
+.item:nth-child(1) {
+    background: darkred;
+}
+
+.item:nth-child(2) {
+    background: red;
+}
+
+.item:nth-child(3) {
+    background: orange;
+}
+.header-middle{
+    background-color: black;
+}
+.img-carousel{
+    width: 100%;
+}
+.btn span.seat-ok {
+    opacity: 0;
+}
+.btn.active span.seat-ok {
+    opacity: 1;
+}
+.vip_seat{
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    /* Координаты точки трансформации */
+    -ms-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+}
+
